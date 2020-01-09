@@ -1,0 +1,6 @@
+---
+- hosts: sftp
+  become: true
+  tasks:
+  - name: Create User
+    user: name=ansible password=ansible  shell=/bin/bash 
