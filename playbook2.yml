@@ -1,0 +1,6 @@
+---
+- hosts: sftp
+  become: true
+  tasks:
+  - name: Create Directory
+    file: path=/home/david.rangel/andibleDirectory state=directory mode=775 owner=david.rangel group=david.rangel
