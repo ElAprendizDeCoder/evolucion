@@ -1,0 +1,13 @@
+- hosts: sftp
+  become: true
+  tasks:
+  - name: Create File
+    file: path=/home/david.rangel/fileAnsible.txt state=absent
+
+
+
+
+
+
+
+
